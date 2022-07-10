@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="NodeList/MySQLTableColumn">
+		<column name="컬럼명" visible="true" order="0" width="69"/>
+		<column name="#" visible="true" order="1" width="27"/>
+		<column name="Data Type" visible="true" order="2" width="82"/>
+		<column name="Not Null" visible="true" order="3" width="60"/>
+		<column name="Auto Increment" visible="true" order="4" width="98"/>
+		<column name="Key" visible="true" order="5" width="33"/>
+		<column name="디폴트" visible="true" order="6" width="50"/>
+		<column name="Extra" visible="true" order="7" width="40"/>
+		<column name="Expression" visible="true" order="8" width="70"/>
+		<column name="Comment" visible="true" order="9" width="68"/>
+	</item>
+	<item id="NodeList/OracleProcedureArgument">
+		<column name="Name" visible="true" order="0" width="100"/>
+		<column name="Position" visible="true" order="1" width="100"/>
+		<column name="In/Out" visible="true" order="2" width="100"/>
+		<column name="Type" visible="true" order="3" width="100"/>
+		<column name="Length" visible="true" order="4" width="100"/>
+		<column name="Scale" visible="true" order="5" width="100"/>
+		<column name="Precision" visible="true" order="6" width="100"/>
+	</item>
+	<item id="NodeList/OracleTableColumn">
+		<column name="컬럼명" visible="true" order="0" width="79"/>
+		<column name="#" visible="true" order="1" width="27"/>
+		<column name="Type" visible="true" order="2" width="112"/>
+		<column name="Type Mod" visible="true" order="3" width="68"/>
+		<column name="Not Null" visible="true" order="4" width="60"/>
+		<column name="디폴트" visible="true" order="5" width="50"/>
+		<column name="Comment" visible="true" order="6" width="68"/>
+	</item>
+	<item id="NodeList/OracleTableConstraint">
+		<column name="이름" visible="true" order="0" width="100"/>
+		<column name="소유자" visible="true" order="1" width="100"/>
+		<column name="Type" visible="true" order="2" width="100"/>
+		<column name="Condition" visible="true" order="3" width="100"/>
+		<column name="Status" visible="true" order="4" width="100"/>
+	</item>
+	<item id="NodeList/OracleTableConstraint/OracleTableConstraintColumn"/>
+	<item id="NodeList/OracleTableConstraintColumn">
+		<column name="Column" visible="true" order="0" width="57"/>
+	</item>
+	<item id="NodeList/OracleTableForeignKey">
+		<column name="이름" visible="true" order="0" width="100"/>
+		<column name="소유자" visible="true" order="1" width="100"/>
+		<column name="Ref Table" visible="true" order="2" width="100"/>
+		<column name="Type" visible="true" order="3" width="100"/>
+		<column name="Ref Object" visible="true" order="4" width="100"/>
+		<column name="On Delete" visible="true" order="5" width="100"/>
+		<column name="Status" visible="true" order="6" width="100"/>
+	</item>
+	<item id="SchemaSelector">
+		<column name="Name" visible="true" order="0" width="131"/>
+	</item>
+</items>

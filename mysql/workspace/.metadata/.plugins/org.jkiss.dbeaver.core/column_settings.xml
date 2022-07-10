@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+	<item id="NodeList/MySQLTableColumn">
+		<column name="컬럼명" visible="true" order="0" width="144"/>
+		<column name="#" visible="true" order="1" width="28"/>
+		<column name="Data Type" visible="true" order="2" width="101"/>
+		<column name="Not Null" visible="true" order="3" width="60"/>
+		<column name="Auto Increment" visible="true" order="4" width="98"/>
+		<column name="Key" visible="true" order="5" width="33"/>
+		<column name="디폴트" visible="true" order="6" width="50"/>
+		<column name="Extra" visible="true" order="7" width="97"/>
+		<column name="Expression" visible="true" order="8" width="70"/>
+		<column name="Comment" visible="true" order="9" width="68"/>
+	</item>
+	<item id="SchemaSelector">
+		<column name="Schema Name" visible="true" order="0" width="93"/>
+		<column name="Default Charset" visible="true" order="1" width="97"/>
+		<column name="Default Collation" visible="true" order="2" width="105"/>
+		<column name="SQL Path" visible="true" order="3" width="64"/>
+		<column name="Database size" visible="true" order="4" width="87"/>
+	</item>
+</items>

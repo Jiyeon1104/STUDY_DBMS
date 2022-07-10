@@ -1,0 +1,19 @@
+create database test;
+
+use test;
+
+create table guest(
+	userNum int auto_increment primary key,
+	userId varchar(100),
+	userPw varchar(200),
+	userAge tinyint unsigned
+);
+
+drop table guest;
+
+select * from test;
+
+alter table guest add column(birth date);
+
+insert into test 
+values('hds1234', hex(aes_encrypt('1234', '365')), 20, '2003-12-04');

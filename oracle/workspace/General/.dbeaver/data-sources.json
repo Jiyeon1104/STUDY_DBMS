@@ -1,0 +1,60 @@
+{
+	"folders": {},
+	"connections": {
+		"oracle_thin-17de60d0f9b-44808fe3f1880fcd": {
+			"provider": "oracle",
+			"driver": "oracle_thin",
+			"name": "XE",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "1521",
+				"database": "XE",
+				"url": "jdbc:oracle:thin:@//localhost:1521/XE",
+				"home": "C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server",
+				"type": "dev",
+				"provider-properties": {
+					"show-only-one-schema@": "false",
+					"@dbeaver-check-schema-content@": "false",
+					"@dbeaver-always-show-dba@": "false",
+					"@dbeaver-always-use-dba-views@": "false",
+					"@dbeaver-meta-use-sys-schema@": "false",
+					"@dbeaver-meta-use-simple-constraints@": "false",
+					"@dbeaver-use-rule-hint@": "false",
+					"@dbeaver-use-meta-optimizer@": "false",
+					"@dbeaver-meta-use-alternative-table-query@": "false",
+					"oracle.meta-search-in-synonyms": "false",
+					"@dbeaver-connection-type@": "BASIC",
+					"@dbeaver-sid-service@": "SERVICE"
+				},
+				"auth-model": "oracle_native",
+				"handlers": {}
+			}
+		}
+	},
+	"virtual-models": {
+		"oracle_thin-17de60d0f9b-44808fe3f1880fcd": {
+			"HR": {
+				":STADIUM": {
+					"properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"empty\" time=\"202112281323\"><entities><data-source id=\"oracle_thin-17de60d0f9b-44808fe3f1880fcd\"><entity id=\"1\" name=\"STADIUM\" fq-name=\"HR.STADIUM\" order=\"0\" color-bg=\"255,128,64\" border-width=\"3\" x=\"311\" y=\"87\"><path name=\"HR\"/></entity><entity id=\"2\" name=\"SCHEDULE\" fq-name=\"HR.SCHEDULE\" order=\"1\" x=\"20\" y=\"20\"><path name=\"HR\"/></entity><entity id=\"3\" name=\"TEAM\" fq-name=\"HR.TEAM\" order=\"2\" x=\"20\" y=\"219\"><path name=\"HR\"/></entity></data-source></entities><relations><relation name=\"SCHEDULE_FK\" fq-name=\"HR.SCHEDULE.SCHEDULE_FK\" type=\"fk\" pk-ref=\"1\" fk-ref=\"2\"/><relation name=\"TEAM_FK\" fq-name=\"HR.TEAM.TEAM_FK\" type=\"fk\" pk-ref=\"1\" fk-ref=\"3\"/></relations></diagram>"
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

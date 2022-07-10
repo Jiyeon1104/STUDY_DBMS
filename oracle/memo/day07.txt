@@ -1,0 +1,96 @@
+DCL(Data Control Language) : 데이터 제어어
+	- GRANT : 권한 부여
+	- REVOKE : 권한 해제
+
+> sqlplus system/1234
+SQL > show user
+SQL > @C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql
+SQL > show user
+SQL > conn system/1234
+SQL > select username from dba_users;
+
+TABLE_SPACE
+테이블이 저장될 공간
+
+SQL > select tablespace_name, status, contents from dba_tablespaces;
+SQL > create tablespace baby datafile 'C:\oraclexe\app\oracle\oradata\XE\BABY.DBF' size 200M autoextend on next 5M maxsize 300M;
+SQL > select file_name, tablespace_name, autoextensible from dba_data_files;
+SQL > grant create user to scott;
+SQL > alter user scott identified by tiger;
+SQL > conn scott/tiger
+SQL > create user baby identified by baby;
+SQL > conn baby/baby
+ORA-01045: user BABY lacks CREATE SESSION privilege; logon denied
+SQL > conn system/1234
+SQL > grant create session to baby;
+SQL > conn baby/baby
+SQL > conn system/1234
+SQL > alter user baby default tablespace baby quota unlimited on baby;
+SQL > conn baby/baby
+SQL > create table test001(id varchar2(10), pw varchar2(10), constraint pk_baby primary key(id));
+ORA-01031: insufficient privileges
+SQL > conn system/1234
+SQL > grant create table to baby;
+SQL > conn baby/baby
+SQL > create table test001(id varchar2(10), pw varchar2(10), constraint pk_baby primary key(id));
+
+DBeaver에서 test001 테이블 확인
+
+SQL> conn hr/hr
+SQL> grant select on emp to baby;
+SQL> conn baby/baby
+SQL> create table copy_emp as select * from hr.emp;
+
+DBeaver에서 copy_emp 테이블 확인
+
+계정 삭제
+DBeaver에서 삭제할 계정과의 연결 끊기
+SQL> drop user baby cascade;
+SQL> drop tablespace baby;
+C:\oraclexe\app\oracle\oradata\XE\BABY.DBF 삭제
+-----------------------------------------------------------------------------------------------------------
+[실습]
+테이블 스페이스와 계정 새로 만들기(로그인 하기 전까지만!)
+---------------------------------------------------------------------------------
+ROLE : 권한이 뭉쳐 있는(모여 있는) 상태
+- CONNECT, RESOURCE, DBA
+
+- GRANT [권한명(ROLE 이름),..] TO 계정명
+- REVOKE [권한명(ROLE 이름),..] FROM 계정명
+
+conn system/1234
+SQL> grant connect to baby;
+conn baby/baby;
+--------------------------------------------------------------------------------
+VIEW
+	기존의 테이블은 그대로 놔둔 채 필요한 컬럼들 및 새로운 컬럼을 만든 가상 테이블.
+	실제 데이터가 저장되는 것은 아니지만 VIEW를 통해서 데이터를 관리할 수 있다.
+
+	- 독립성 : 다른 곳에서 접근하지 못하도록 하는 성질
+	- 편리성 : 긴 쿼리문을 짧게 만드는 성질
+	- 보안성 : 기존의 쿼리문이 보이지 않는다.
+
+VIEW 문법
+	CREATE VIEW VIEW이름 AS 쿼리문;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

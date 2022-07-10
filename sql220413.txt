@@ -1,0 +1,14 @@
+DML (Data Manipulation Language) 데이터 조작어
+지금까지 주로 사용한 select 문도 DML에 속함
+조작은 하지만 단지 보여만 줄 뿐 직접 데이터를 변경하지는 않음
+하지만 이제부터 공부할 INSERT DELETE UPDATE은 데이터를 직접 삽입 삭제 수정하는 명령어임
+이렇게 데이터를 조작하여 저장하는 일련의 과정을 '트랜잭션 transaction'이라고 함
+
+DML은 트랜잭션을 다루는 명렁어들임
+DML명령어들은 SELECT문처럼 행을 기준으로 처리함
+
+1) INSERT
+INSERT명령어는 테이블에 새로운 행을 입력할 때 사용함
+새로운 데이터를 행단위로 입력함 
+INSERT INTO 테이블명 [열이름1, 열이름2]
+VALUES (데이터1, 데이터2);

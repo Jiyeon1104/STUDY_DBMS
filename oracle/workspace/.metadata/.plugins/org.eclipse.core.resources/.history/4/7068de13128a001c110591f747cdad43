@@ -1,0 +1,41 @@
+use test;
+
+create sequence seq_guest;
+
+create table guest(
+	userNum int unsigned auto_increment primary key,
+	userId varchar(100),
+	userPw varchar(200),
+	userAge tinyint unsigned
+);
+
+drop table guest;
+
+select * from guest;
+
+alter table guest add column(birth date);
+
+insert into guest (userId, userPw, userAge, birth)
+values('hds1234', hex(aes_encrypt('1234', '365')), 20, '2003-12-04');
+
+select userId, aes_decrypt(unhex(userPw), '365') as userPw, userAge, birth from guest;
+
+/*현재 시퀀스 가져오기*/
+SELECT `auto_increment`
+FROM  information_schema.TABLES
+WHERE TABLE_SCHEMA = 'test'
+AND   TABLE_NAME   = 'guest';
+
+insert into guest (userId, userPw, userAge)
+values('hds4444', hex(aes_encrypt('1234', '365')), 20);
+
+/*MySQL에는 오라클의 NVL2함수의 기능인 함수가 없다.*/
+select userNum, userId, userPw, userAge, ifnull(birth, '미등록') from guest;
+
+/*현재 날짜 : now()*/
+select now() from dual;
+
+/*날짜를 string으로 변경 : date_format(시간, '형식')*/
+select date_format(now(), '%Y년 %m월 %d일 %H:%i:%s') from dual; 
+select date_format(now(), '%y년 %m월 %d일 %H:%i:%s') from dual;
+

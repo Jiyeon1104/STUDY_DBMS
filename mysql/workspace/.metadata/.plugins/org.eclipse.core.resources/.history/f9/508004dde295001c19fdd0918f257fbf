@@ -1,0 +1,5 @@
+use board;
+
+create table tbl_reply(
+	
+);

@@ -1,0 +1,53 @@
+DB(Database)
+	데이터가 모여 있는 기지.
+	추상적인 용어.
+
+DBMS(Database Management System)
+	DB를 관리할 수 있는 구체적인 시스템.
+	오라클, 마리아DB, MySQL, MS-SQL, MongoDB,...
+
+오라클 DBMS 버전
+	i : internet
+	g : grid
+	c : cloud
+
+오라클 DBMS 설치 - 11G
+https://drive.google.com/file/d/1rM1Z7-mA6vjySBgwWLr3ZI883xiL27HN/view?usp=sharing
+
+압축 해제 > DISK1/setup.ext 실행 > Next > I Agree.. 체크 > Next > Next > 비밀번호 1234
+> Next > 정보 확인 후 Intall > Finsh
+
+계정
+	sys	: 모든 권한
+	system	: 계정 관리
+	일반 계정 : 스키마 관리(hr, scott,...)
+
+스키마
+	정리가 잘 되어 있는 표들의 묶음, 상태
+
+일반 계정 접속(hr)
+	cmd 접속 > sqlplus system/1234 > 비밀번호 : 1234
+	SQL> show user
+	USER is "SYSTEM"
+	SQL> alter user hr account unlock;
+	SQL> alter user hr identified by hr;
+	SQL> conn hr/hr
+	SQL> show user
+	SQL> USER is "HR"
+
+IDE 설치
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

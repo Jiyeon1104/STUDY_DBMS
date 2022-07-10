@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drivers>
+	<provider id="wmi"/>
+	<provider id="athena"/>
+	<provider id="clickhouse"/>
+	<provider id="datavirtuality"/>
+	<provider id="db2"/>
+	<provider id="db2_zos"/>
+	<provider id="db2_i"/>
+	<provider id="elasticsearch"/>
+	<provider id="exasol"/>
+	<provider id="jaybird"/>
+	<provider id="generic"/>
+	<provider id="bigquery"/>
+	<provider id="google_spanner"/>
+	<provider id="greenplum"/>
+	<provider id="h2gis"/>
+	<provider id="hana"/>
+	<provider id="hive"/>
+	<provider id="kognitio"/>
+	<provider id="sqlserver"/>
+	<provider id="mssql"/>
+	<provider id="mysql">
+		<driver id="mysql8" categories="sql" name="MySQL" class="com.mysql.cj.jdbc.Driver" url="jdbc:mysql://{host}[:{port}]/[{database}]" port="3306" defaultUser="root" description="Driver for MySQL 8 and later" custom="false">
+			<library type="jar" path="maven:/mysql:mysql-connector-java:RELEASE" custom="false" version="8.0.17">
+				<file id="mysql:mysql-connector-java" version="8.0.17" path="${drivers_home}\maven\maven-central\mysql\mysql-connector-java-8.0.17.jar"/>
+				<file id="com.google.protobuf:protobuf-java" version="3.6.1" path="${drivers_home}\maven\maven-central\com.google.protobuf\protobuf-java-3.6.1.jar"/>
+			</library>
+		</driver>
+	</provider>
+	<provider id="oceanbase"/>
+	<provider id="ocient"/>
+	<provider id="open-distro-elasticsearch"/>
+	<provider id="oracle">
+		<driver id="oracle_thin" categories="sql" name="Oracle" class="oracle.jdbc.OracleDriver" url="jdbc:oracle:thin:@{host}[:{port}]/{database}" port="1521" defaultDatabase="ORCL" defaultUser="system" description="Oracle JDBC driver" custom="false">
+			<library type="jar" path="maven:/com.oracle.database.jdbc:ojdbc8:RELEASE" custom="false" disabled="true" version="12.2.0.1"/>
+			<library type="jar" path="maven:/com.oracle.database.nls:orai18n:RELEASE" custom="false" disabled="true" version="12.2.0.1"/>
+			<library type="jar" path="maven:/com.oracle.database.xml:xdb6:RELEASE" custom="false" disabled="true" version="12.2.0.1"/>
+			<library type="jar" path="maven:/com.oracle.database.xml:xmlparserv2:RELEASE" custom="false" disabled="true" version="12.2.0.1"/>
+			<library type="jar" path="C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc6.jar" custom="true"/>
+		</driver>
+	</provider>
+	<provider id="postgresql"/>
+	<provider id="snowflake"/>
+	<provider id="sqlite"/>
+	<provider id="vertica"/>
+</drivers>

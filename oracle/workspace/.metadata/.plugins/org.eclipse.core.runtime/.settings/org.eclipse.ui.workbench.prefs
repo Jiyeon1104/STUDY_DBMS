@@ -1,0 +1,16 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+ColorsAndFontsPreferencePage.expandedCategories=Torg.jkiss.dbeaver.ui.presentation.sql\tTorg.eclipse.compare.contentmergeviewer.TextMergeViewer
+ColorsAndFontsPreferencePage.selectedElement=Forg.jkiss.dbeaver.sql.editor.font.output
+eclipse.preferences.version=1
+org.eclipse.compare.contentmergeviewer.TextMergeViewer=1|Consolas|20.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+org.eclipse.jface.dialogfont=1|\uB9D1\uC740 \uACE0\uB515|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|-127|3|2|1|50|\uB9D1\uC740 \uACE0\uB515;
+org.eclipse.jface.textfont=1|Consolas|20.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Consolas;
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_END=255,255,255
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_BG_START=255,255,255
+org.eclipse.ui.workbench.ACTIVE_NOFOCUS_TAB_TEXT_COLOR=16,16,16
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_END=255,255,255
+org.eclipse.ui.workbench.ACTIVE_TAB_BG_START=255,255,255
+org.eclipse.ui.workbench.INACTIVE_TAB_BG_START=242,242,242
+org.jkiss.dbeaver.hex.editor.font.output=1|Courier New|18.0|0|WINDOWS|1|-24|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+org.jkiss.dbeaver.sql.editor.font.output=1|Courier New|20.25|0|WINDOWS|1|-27|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+org.jkiss.dbeaver.sql.resultset.font=1|\uB9D1\uC740 \uACE0\uB515|19.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|\uB9D1\uC740 \uACE0\uB515;

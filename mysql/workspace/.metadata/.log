@@ -1,0 +1,1291 @@
+!SESSION 2022-02-11 13:41:03.657 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data D:\aigb_0900_hds\dbms\mysql\workspace
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:08:43.984
+!MESSAGE SQL Error [1075] [42000]: Incorrect table definition; there can be only one auto column and it must be defined as a key
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-11 14:08:43.984
+!MESSAGE SQL Error [1075] [42000]: Incorrect table definition; there can be only one auto column and it must be defined as a key
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-11 14:08:43.984
+!MESSAGE Incorrect table definition; there can be only one auto column and it must be defined as a key
+!STACK 0
+java.sql.SQLSyntaxErrorException: Incorrect table definition; there can be only one auto column and it must be defined as a key
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:14.703
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:14.711
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:14.715
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:14.720
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:14.817
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:14.822
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:15.232
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:15.236
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:15.240
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:15.252
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:16.094
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:16.098
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:17.089
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:13:17.100
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:14:07.669
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:14:07.673
+!MESSAGE Table 'guest' not found in catalog 'test'
+!STACK 0
+org.jkiss.dbeaver.DBException: Table 'guest' not found in catalog 'test'
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:141)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 14:15:18.469
+!MESSAGE SQL Error [1060] [42S21]: Duplicate column name 'birth'
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-11 14:15:18.469
+!MESSAGE SQL Error [1060] [42S21]: Duplicate column name 'birth'
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-11 14:15:18.469
+!MESSAGE Duplicate column name 'birth'
+!STACK 0
+java.sql.SQLSyntaxErrorException: Duplicate column name 'birth'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:31.961
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:31.971
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:31.977
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:31.983
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:32.059
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:32.069
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.669
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.676
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.687
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.693
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.828
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.832
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.837
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.841
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.971
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.976
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.982
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:35.986
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:36.067
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:36.071
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:273)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:36.077
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:36.089
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:37.455
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:65)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-11 15:17:37.459
+!MESSAGE Table catalog 'guest' not found
+!STACK 0
+org.jkiss.dbeaver.DBException: Table catalog 'guest' not found
+	at org.jkiss.dbeaver.ext.mysql.model.MySQLStructureAssistant$1.resolveObject(MySQLStructureAssistant.java:137)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByPath(SQLSearchUtils.java:114)
+	at org.jkiss.dbeaver.model.sql.SQLSearchUtils.findObjectByFQN(SQLSearchUtils.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.getTableFromAlias(SQLCompletionAnalyzer.java:848)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:280)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2022-02-16 09:21:39.988 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-16 09:28:11.372
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.model.impl.struct.AbstractObjectReference.getFullyQualifiedName(AbstractObjectReference.java:90)
+	at org.jkiss.dbeaver.model.DBUtils.getObjectFullName(DBUtils.java:1515)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1251)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromAssistant(SQLCompletionAnalyzer.java:1147)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:816)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:296)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-16 09:28:11.632
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.model.impl.struct.AbstractObjectReference.getFullyQualifiedName(AbstractObjectReference.java:90)
+	at org.jkiss.dbeaver.model.DBUtils.getObjectFullName(DBUtils.java:1515)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1251)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromAssistant(SQLCompletionAnalyzer.java:1147)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:816)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:296)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-16 11:11:33.821
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.model.impl.struct.AbstractObjectReference.getFullyQualifiedName(AbstractObjectReference.java:90)
+	at org.jkiss.dbeaver.model.DBUtils.getObjectFullName(DBUtils.java:1515)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1251)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromAssistant(SQLCompletionAnalyzer.java:1147)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:816)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:296)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-16 11:11:34.032
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.model.impl.struct.AbstractObjectReference.getFullyQualifiedName(AbstractObjectReference.java:90)
+	at org.jkiss.dbeaver.model.DBUtils.getObjectFullName(DBUtils.java:1515)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromObject(SQLCompletionAnalyzer.java:1251)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeProposalsFromAssistant(SQLCompletionAnalyzer.java:1147)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.makeDataSourceProposals(SQLCompletionAnalyzer.java:816)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:296)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.runAnalyzer(SQLCompletionAnalyzer.java:98)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:82)
+	at org.jkiss.dbeaver.model.sql.completion.SQLCompletionAnalyzer.run(SQLCompletionAnalyzer.java:1)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.syntax.SQLCompletionProcessor$ProposalSearchJob.run(SQLCompletionProcessor.java:330)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-16 11:11:35.392
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from tbl_member' at line 1
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-16 11:11:35.392
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from tbl_member' at line 1
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-16 11:11:35.392
+!MESSAGE You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from tbl_member' at line 1
+!STACK 0
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'from tbl_member' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2022-02-17 14:12:41.584 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-17 14:34:00.349
+!MESSAGE SQL Error [1146] [42S02]: Table 'test.tbl_member' doesn't exist
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-17 14:34:00.349
+!MESSAGE SQL Error [1146] [42S02]: Table 'test.tbl_member' doesn't exist
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-17 14:34:00.349
+!MESSAGE Table 'test.tbl_member' doesn't exist
+!STACK 0
+java.sql.SQLSyntaxErrorException: Table 'test.tbl_member' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-17 14:34:05.465
+!MESSAGE SQL Error [1146] [42S02]: Table 'test.tbl_member' doesn't exist
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-17 14:34:05.465
+!MESSAGE SQL Error [1146] [42S02]: Table 'test.tbl_member' doesn't exist
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-17 14:34:05.465
+!MESSAGE Table 'test.tbl_member' doesn't exist
+!STACK 0
+java.sql.SQLSyntaxErrorException: Table 'test.tbl_member' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2022-02-23 09:30:33.211 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2022-02-23 09:36:28.194
+!MESSAGE Can't find FK table tbl_board
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-23 09:36:28.225
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.erd.model.ERDUtils.collectDatabaseTables(ERDUtils.java:216)
+	at org.jkiss.dbeaver.erd.ui.editor.ERDEditorEmbedded.loadFromDatabase(ERDEditorEmbedded.java:223)
+	at org.jkiss.dbeaver.erd.ui.editor.ERDEditorEmbedded$1.evaluate(ERDEditorEmbedded.java:171)
+	at org.jkiss.dbeaver.erd.ui.editor.ERDEditorEmbedded$1.evaluate(ERDEditorEmbedded.java:1)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:88)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:72)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-23 09:36:28.255
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.jkiss.dbeaver.erd.model.ERDUtils.collectDatabaseTables(ERDUtils.java:216)
+	at org.jkiss.dbeaver.erd.ui.editor.ERDEditorEmbedded.loadFromDatabase(ERDEditorEmbedded.java:223)
+	at org.jkiss.dbeaver.erd.ui.editor.ERDEditorEmbedded$1.evaluate(ERDEditorEmbedded.java:171)
+	at org.jkiss.dbeaver.erd.ui.editor.ERDEditorEmbedded$1.evaluate(ERDEditorEmbedded.java:1)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:88)
+	at org.jkiss.dbeaver.ui.LoadingJob.run(LoadingJob.java:72)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2022-02-24 11:28:53.237 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-24 11:33:24.047
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-24 11:33:24.047
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-24 11:33:24.047
+!MESSAGE Specified key was too long; max key length is 3072 bytes
+!STACK 0
+java.sql.SQLSyntaxErrorException: Specified key was too long; max key length is 3072 bytes
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-24 11:33:40.494
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-24 11:33:40.494
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-24 11:33:40.494
+!MESSAGE Specified key was too long; max key length is 3072 bytes
+!STACK 0
+java.sql.SQLSyntaxErrorException: Specified key was too long; max key length is 3072 bytes
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:01.325
+!MESSAGE SQL Error [S1009]: Can not issue empty query.
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:01.325
+!MESSAGE SQL Error [S1009]: Can not issue empty query.
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:01.326
+!MESSAGE Can not issue empty query.
+!STACK 0
+java.sql.SQLException: Can not issue empty query.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.StatementImpl.checkNullOrEmptyQuery(StatementImpl.java:388)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:662)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:06.696
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:06.696
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:06.696
+!MESSAGE Specified key was too long; max key length is 3072 bytes
+!STACK 0
+java.sql.SQLSyntaxErrorException: Specified key was too long; max key length is 3072 bytes
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:16.810
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:16.810
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:16.810
+!MESSAGE Specified key was too long; max key length is 3072 bytes
+!STACK 0
+java.sql.SQLSyntaxErrorException: Specified key was too long; max key length is 3072 bytes
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:20.598
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:20.598
+!MESSAGE SQL Error [1071] [42000]: Specified key was too long; max key length is 3072 bytes
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-24 11:34:20.598
+!MESSAGE Specified key was too long; max key length is 3072 bytes
+!STACK 0
+java.sql.SQLSyntaxErrorException: Specified key was too long; max key length is 3072 bytes
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-24 15:30:15.353
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc 1 limit 0, 1' at line 2
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-24 15:30:15.353
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc 1 limit 0, 1' at line 2
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-24 15:30:15.353
+!MESSAGE You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc 1 limit 0, 1' at line 2
+!STACK 0
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc 1 limit 0, 1' at line 2
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-24 15:30:36.775
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc 1' at line 2
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-24 15:30:36.775
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc 1' at line 2
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-24 15:30:36.775
+!MESSAGE You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc 1' at line 2
+!STACK 0
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc 1' at line 2
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2022-02-25 10:20:16.314 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.12
+java.vendor=Eclipse Foundation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:15.949
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber),
+)' at line 3
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:15.949
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber),
+)' at line 3
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:15.949
+!MESSAGE You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber),
+)' at line 3
+!STACK 0
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber),
+)' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:18.086
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber)
+)' at line 3
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:18.086
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber)
+)' at line 3
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:18.086
+!MESSAGE You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber)
+)' at line 3
+!STACK 0
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber)
+)' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:45.484
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'references tbl_board(boardNumber)
+)' at line 4
+!SUBENTRY 1 org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:45.484
+!MESSAGE SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'references tbl_board(boardNumber)
+)' at line 4
+!SUBENTRY 2 org.jkiss.dbeaver.model 4 0 2022-02-25 11:30:45.484
+!MESSAGE You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'references tbl_board(boardNumber)
+)' at line 4
+!STACK 0
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'references tbl_board(boardNumber)
+)' at line 4
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.jkiss.dbeaver.model 2 0 2022-02-25 15:55:42.324
+!MESSAGE Can't load driver properties
+!SUBENTRY 1 org.jkiss.dbeaver.model 2 0 2022-02-25 15:55:42.324
+!MESSAGE Error creating driver 'Oracle' instance.
+Most likely required jar files are missing.
+You should configure jars in driver settings.
+
+Reason: can't load driver class 'oracle.jdbc.OracleDriver'
+!SUBENTRY 2 org.jkiss.dbeaver.model 2 0 2022-02-25 15:55:42.324
+!MESSAGE oracle.jdbc.OracleDriver
+!STACK 0
+java.lang.ClassNotFoundException: oracle.jdbc.OracleDriver
+	at java.base/java.net.URLClassLoader.findClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Unknown Source)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.loadDriver(DriverDescriptor.java:1081)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.loadDriver(DriverDescriptor.java:1020)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.getDriverInstance(DriverDescriptor.java:614)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSourceProvider.getConnectionProperties(JDBCDataSourceProvider.java:63)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionPropertiesControl.loadDriverProperties(ConnectionPropertiesControl.java:154)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionPropertiesControl.makeProperties(ConnectionPropertiesControl.java:76)
+	at org.jkiss.dbeaver.ui.dialogs.connection.DriverPropertiesDialogPage.lambda$0(DriverPropertiesDialogPage.java:87)
+	at org.jkiss.dbeaver.runtime.RunnableContextDelegate.lambda$0(RunnableContextDelegate.java:39)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)

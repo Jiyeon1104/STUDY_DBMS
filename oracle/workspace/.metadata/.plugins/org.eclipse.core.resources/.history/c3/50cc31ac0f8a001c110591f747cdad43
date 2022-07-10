@@ -1,0 +1,17 @@
+create database test;
+
+use test;
+
+create table test(
+	userNum int auto increment,
+	userId varchar(100) primary key,
+	userPw varchar(200),
+	userAge tinyint unsigned
+);
+
+drop table test;
+
+select * from test;
+
+insert into test 
+values('hds1234', '1234', 255);

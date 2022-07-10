@@ -1,0 +1,6 @@
+create database board;
+use board;
+
+create table tbl_member(
+	
+);

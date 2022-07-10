@@ -1,0 +1,56 @@
+프로시저(PROCEDURE)
+	f(x) = 2x+1
+	IN	OUT
+
+▶ 프로시저 선언
+CREATE OR REPLACE PROCEDURE 프로시저 이름
+(
+	변수명 IN 데이터타입:=값
+	변수명 IN 데이터타입%TYPE
+	리턴값 OUT
+)
+IS
+	프로시저 내에서 사용할 변수, 상수 등 선언
+
+BEGIN
+	실행할 문장(쿼리)
+END;
+
+▶ 프로시저 사용
+CALL 프로시저 이름(값1, 값2,...);
+====================================================
+PL/SQL문
+-IF문
+
+1.
+	IF 조건식 THEN 실행문;
+	END IF;
+
+2.
+	IF 조건식 THEN 실행문;
+	ELSIF 조건식 THEN 실행문;
+	...
+	ELSE 실행문;
+	END IF;
+3.
+	IF 조건식 THEN 실행문;
+	ELSE 실행문;
+	END IF;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+NULL
+	정의되지 않은 값
+	빈 값 대신 미정 값을 부여할 때 사용
+	PK는 불가능, FK 가능, UK 가능
+
+NOT NULL 제약조건
+	ALTER TABLE [테이블명] MODIFY NOT NULL
+
+제약조건 삭제
+	ALTER TABLE [테이블명] DROP CONSTRAINT [제약조건 이름]
+
+조건식
+	컬럼명 IS NULL : 컬럼값이 NULL이면 참
+	컬럼명 IS NOT NULL : 컬럼값이 NULL이 아니면 참
+
+NULL 값을 다른 값으로 변경
+	NVL(컬럼명, '값') : NULL 값 대신 다른 값으로 변경 후 조회
+	NVL2(컬럼명, 'NULL이 아닐 때 값', 'NULL일 때 값') : NULL일 때의 값, NULL이 아닐 때의 값을 각각 설정
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

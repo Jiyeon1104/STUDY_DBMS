@@ -1,0 +1,7 @@
+use board;
+
+create table tbl_reply(
+	replyNumber int unsigned auto_increment primary key,
+	boardNumber int unsigned foreign key references tbl_board(boardNumber),
+	
+);

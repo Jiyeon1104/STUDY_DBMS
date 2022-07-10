@@ -1,0 +1,56 @@
+DCL(Data Control Language) : 데이터 제어어
+	- GRANT : 권한 부여
+	- REVOKE : 권한 해제
+
+> sqlplus system/1234
+SQL > show user
+SQL > @C:\oraclexe\app\oracle\product\11.2.0\server\rdbms\admin\scott.sql
+SQL > show user
+SQL > conn system/1234
+SQL > select username from dba_users;
+
+TABLE_SPACE
+테이블이 저장될 공간
+
+SQL > select tablespace_name, status, contents from dba_tablespaces;
+SQL > create tablespace baby datafile 'C:\oraclexe\app\oracle\oradata\XE\BABY.DBF' size 200M autoextend on next 5M maxsize 300M;
+SQL > select file_name, tablespace_name, autoextensible from dba_data_files;
+SQL > grant create user to scott;
+SQL > conn scott/tiger
+SQL > create user baby identified by baby;
+SQL > conn baby/baby
+ORA-01045: user BABY lacks CREATE SESSION privilege; logon denied
+SQL > conn system/1234
+SQL > grant create session to baby;
+SQL > conn baby/baby
+SQL > conn system/1234
+SQL > alter user baby default tablespace baby quota unlimited on baby;
+SQL > conn baby/baby
+SQL > create table test001(id varchar2(10), pw varchar2(10), constraint pk_baby primary key(id));
+ORA-01031: insufficient privileges
+SQL > conn system/1234
+SQL > grant create table to baby;
+SQL > conn baby/baby
+SQL > create table test001(id varchar2(10), pw varchar2(10), constraint pk_baby primary key(id));
+
+DBeaver에서 test001 테이블 확인
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

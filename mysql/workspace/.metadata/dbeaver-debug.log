@@ -1,0 +1,196 @@
+2022-02-25 10:20:20.390 - Create display
+2022-02-25 10:20:20.522 - DBeaver 21.3.1.202112130652 is starting
+2022-02-25 10:20:20.523 - OS: Windows 10 10.0 (amd64)
+2022-02-25 10:20:20.523 - Java version: 11.0.12 by Eclipse Foundation (64bit)
+2022-02-25 10:20:20.524 - Install path: 'D:\aigb_0900_hds\dbms\mysql\resource\dbeaver'
+2022-02-25 10:20:20.524 - Instance path: 'file:/D:/aigb_0900_hds/dbms/mysql/workspace/'
+2022-02-25 10:20:20.524 - Memory available 64Mb/1024Mb
+> Start DBeaver UI Editors - Base [org.jkiss.dbeaver.ui.editors.base 1.0.71.202112130652]
+2022-02-25 10:20:20.566 - Starting RMI server at 29341
+2022-02-25 10:20:20.650 - Run workbench
+> Start Eclipse e4 작업영역 SWT [org.eclipse.e4.ui.workbench.swt 0.16.200.v20210723-1326]
+> Start Eclipse 응용 프로그램 서비스 [org.eclipse.e4.core.services 2.3.0.v20210723-1034]
+> Start Eclipse 사용자 인터페이스 응용 프로그램 서비스 [org.eclipse.e4.ui.services 1.5.0.v20210115-1333]
+> Start EMF XML/XMI 퍼시스턴스 [org.eclipse.emf.ecore.xmi 2.16.0.v20190528-0725]
+> Start Eclipse CSS SWT 테마 지원 [org.eclipse.e4.ui.css.swt.theme 0.13.0.v20201026-1147]
+> Start Eclipse e4 작업영역 기능 추가 [org.eclipse.e4.ui.workbench.addons.swt 1.4.300.v20210813-1521]
+> Start Eclipse e4 작업영역 SWT 렌더러 [org.eclipse.e4.ui.workbench.renderers.swt 0.15.200.v20210816-1658]
+> Start Eclipse 바인딩 지원 [org.eclipse.e4.ui.bindings 0.13.100.v20210722-1426]
+> Start Eclipse 의존성 삽입 확장 [org.eclipse.e4.core.di.extensions 0.17.0.v20210625-1052]
+> Start Eclipse CSS SWT 지원 [org.eclipse.e4.ui.css.swt 0.14.300.v20210723-0837]
+> Start Java Native Access [com.sun.jna 5.8.0.v20210503-0343]
+> Start DBeaver UI [org.jkiss.dbeaver.ui 5.1.86.202112130652]
+2022-02-25 10:20:28.869 - Configure workbench window
+> Start 도움말 시스템 코어 [org.eclipse.help 3.9.100.v20210721-0601]
+2022-02-25 10:20:29.527 - Create actions
+2022-02-25 10:20:29.531 - Disable Eclipse action set 'org.eclipse.ui.edit.text.actionSet.annotationNavigation'
+2022-02-25 10:20:29.532 - Disable Eclipse action set 'org.eclipse.ui.WorkingSetActionSet'
+2022-02-25 10:20:29.532 - Disable Eclipse action set 'org.eclipse.ui.actionSet.openFiles'
+2022-02-25 10:20:30.115 - Initialize workbench window
+2022-02-25 10:20:30.127 - Finish initialization
+> Start 기본 문서 편집기 [org.eclipse.ui.editors 3.14.200.v20210622-1002]
+> Start 텍스트 편집기 프레임워크 [org.eclipse.ui.workbench.texteditor 3.16.200.v20210724-2153]
+> Start DBeaver SQL Model [org.jkiss.dbeaver.model.sql 1.0.61.202112130652]
+Warning: NLS unused message: actions_navigator__objects in: org.jkiss.dbeaver.ui.editors.sql.internal.SQLEditorMessages
+> Start DBeaver UI Editors - SQL [org.jkiss.dbeaver.ui.editors.sql 1.0.71.202112130652]
+> Start 팀 지원 핵심 [org.eclipse.team.core 3.9.100.v20210604-1207]
+> Start 핵심 비교 지원 [org.eclipse.compare.core 3.6.1000.v20201020-1107]
+> Start Equinox Java 인증 및 권한 부여 서비스 (JAAS) [org.eclipse.equinox.security 1.3.700.v20210726-0943]
+> Start 인터넷 연결 관리 사용자 인터페이스 [org.eclipse.ui.net 1.4.0.v20210426-0838]
+> Start 인터넷 연결 관리 [org.eclipse.core.net 1.3.1100.v20210424-0724]
+2022-02-25 10:20:32.998 - Script dialect 'oceanbase' not found in registry (for data source provider oceanbase). Use default.
+2022-02-25 10:20:33.006 - Loading user drivers configuration from 'D:\aigb_0900_hds\dbms\mysql\workspace\.metadata\.plugins\org.jkiss.dbeaver.core\drivers.xml'
+2022-02-25 10:20:33.030 - Total database drivers: 93 (93)
+> Start DBeaver UI Editors - Data [org.jkiss.dbeaver.ui.editors.data 1.0.71.202112130652]
+> Start DBeaver Sample Database [org.jkiss.dbeaver.ext.sample.database 1.0.108.202112130652]
+> Start DBeaver Tip of the day [org.jkiss.dbeaver.ext.ui.tipoftheday 1.0.77.202112130652]
+> Start Draw2d [org.eclipse.draw2dl 3.12.100.20211006155649]
+> Start GEF3 GEF (MVC) [org.eclipse.gef3 3.12.100.20211006155649]
+> Start DBeaver ERD UI [org.jkiss.dbeaver.erd.ui 3.0.31.202112130652]
+> Start DBeaver ERD Model [org.jkiss.dbeaver.erd.model 1.0.31.202112130652]
+> Start 콘솔 [org.eclipse.ui.console 3.11.100.v20210721-1355]
+> Start 디버그 핵심 [org.eclipse.debug.core 3.18.200.v20210721-1355]
+2022-02-25 10:20:35.389 - Connect with 'localhost' (mysql8-17f19e04cac-65c77426ca61c7fd)
+> Start DBeaver MySQL Support [org.jkiss.dbeaver.ext.mysql 2.1.156.202112130652]
+2022-02-25 10:20:35.466 - Execution context opened (localhost; Main; 0)
+> Start DBeaver GIS Support [org.jkiss.dbeaver.data.gis 1.0.95.202112130652]
+2022-02-25 10:20:35.563 - Open [https://dbeaver.io/product/version.xml]
+2022-02-25 10:20:35.890 - Execution context opened (localhost; Metadata; 1)
+2022-02-25 10:20:36.002 - Connected (mysql8-17f19e04cac-65c77426ca61c7fd, MySQL Connector/J [mysql-connector-java-8.0.27 (Revision: e920b979015ae7117d60d72bcc8f077a839cd791)])
+2022-02-25 10:20:36.036 - Execution context opened (localhost; SQLEditor <member.sql>; 2)
+2022-02-25 11:26:52.793 - Execution context opened (localhost; SQLEditor <Script.sql>; 3)
+2022-02-25 11:27:10.632 - Execution context opened (localhost; SQLEditor <Script.sql>; 4)
+2022-02-25 11:30:15.940 - SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber),
+)' at line 3
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber),
+)' at line 3
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:133)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber),
+)' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	... 12 more
+2022-02-25 11:30:18.084 - SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber)
+)' at line 3
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber)
+)' at line 3
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:133)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'foreign key references tbl_board(boardNumber)
+)' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	... 12 more
+2022-02-25 11:30:45.481 - SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'references tbl_board(boardNumber)
+)' at line 4
+org.jkiss.dbeaver.model.sql.DBSQLException: SQL Error [1064] [42000]: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'references tbl_board(boardNumber)
+)' at line 4
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:133)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeStatement(SQLQueryJob.java:513)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.lambda$0(SQLQueryJob.java:444)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.executeSingleQuery(SQLQueryJob.java:431)
+	at org.jkiss.dbeaver.ui.editors.sql.execute.SQLQueryJob.extractData(SQLQueryJob.java:816)
+	at org.jkiss.dbeaver.ui.editors.sql.SQLEditor$QueryResultsContainer.readData(SQLEditor.java:3453)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.lambda$0(ResultSetJobDataRead.java:118)
+	at org.jkiss.dbeaver.model.exec.DBExecUtils.tryExecuteRecover(DBExecUtils.java:171)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetJobDataRead.run(ResultSetJobDataRead.java:116)
+	at org.jkiss.dbeaver.ui.controls.resultset.ResultSetViewer$ResultSetDataPumpJob.run(ResultSetViewer.java:4810)
+	at org.jkiss.dbeaver.model.runtime.AbstractJob.run(AbstractJob.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'references tbl_board(boardNumber)
+)' at line 4
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:768)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:653)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.execute(JDBCStatementImpl.java:330)
+	at org.jkiss.dbeaver.model.impl.jdbc.exec.JDBCStatementImpl.executeStatement(JDBCStatementImpl.java:130)
+	... 12 more
+2022-02-25 11:36:31.275 - Table 'board.tbl_reply' not found in metadata catalog
+2022-02-25 11:36:31.275 - Table 'board.tbl_reply' not found in metadata catalog
+2022-02-25 11:36:31.275 - Table 'board.tbl_reply' not found in metadata catalog
+2022-02-25 11:36:31.276 - Table 'board.tbl_reply' not found in metadata catalog
+2022-02-25 11:37:18.503 - Table 'board.tbl_reply' not found in metadata catalog
+2022-02-25 11:37:18.504 - Table 'board.tbl_reply' not found in metadata catalog
+2022-02-25 11:37:18.504 - Table 'board.tbl_reply' not found in metadata catalog
+2022-02-25 11:37:18.504 - Table 'board.tbl_reply' not found in metadata catalog
+> Start DBeaver Tasks View [org.jkiss.dbeaver.tasks.ui.view 1.0.20.202112130652]
+> Start DBeaver Tasks - General UI [org.jkiss.dbeaver.tasks.ui 1.0.49.202112130652]
+> Start DBeaver UI Editors - Connections [org.jkiss.dbeaver.ui.editors.connection 1.0.62.202112130652]
+> Start DBeaver Oracle UI [org.jkiss.dbeaver.ext.oracle.ui 1.0.58.202112130652]
+> Start DBeaver Oracle Support [org.jkiss.dbeaver.ext.oracle 2.1.156.202112130652]
+> Start DBeaver SSH tunnels UI [org.jkiss.dbeaver.net.ssh.ui 1.0.92.202112130652]
+> Start DBeaver SSH tunnels [org.jkiss.dbeaver.net.ssh 1.0.92.202112130652]
+2022-02-25 15:55:30.768 - Service 'org.jkiss.dbeaver.runtime.ui.UIServiceSecurity' not found
+2022-02-25 15:55:39.407 - Open [https://repo1.maven.org/maven2/com/oracle/database/jdbc/ojdbc8/12.2.0.1/ojdbc8-12.2.0.1.pom]
+2022-02-25 15:55:40.008 - Open [https://repo1.maven.org/maven2/com/oracle/database/jdbc/ucp/12.2.0.1/ucp-12.2.0.1.pom]
+2022-02-25 15:55:40.161 - Open [https://repo1.maven.org/maven2/com/oracle/database/security/oraclepki/12.2.0.1/oraclepki-12.2.0.1.pom]
+2022-02-25 15:55:40.319 - Open [https://repo1.maven.org/maven2/com/oracle/database/security/osdt_cert/12.2.0.1/osdt_cert-12.2.0.1.pom]
+2022-02-25 15:55:40.475 - Open [https://repo1.maven.org/maven2/com/oracle/database/security/osdt_core/12.2.0.1/osdt_core-12.2.0.1.pom]
+2022-02-25 15:55:40.629 - Open [https://repo1.maven.org/maven2/com/oracle/database/ha/simplefan/12.2.0.1/simplefan-12.2.0.1.pom]
+2022-02-25 15:55:40.782 - Open [https://repo1.maven.org/maven2/com/oracle/database/ha/ons/12.2.0.1/ons-12.2.0.1.pom]
+2022-02-25 15:55:40.934 - Open [https://repo1.maven.org/maven2/com/oracle/database/nls/orai18n/12.2.0.1/orai18n-12.2.0.1.pom]
+2022-02-25 15:55:41.088 - Open [https://repo1.maven.org/maven2/com/oracle/database/xml/xdb6/12.2.0.1/xdb6-12.2.0.1.pom]
+2022-02-25 15:55:41.256 - Open [https://repo1.maven.org/maven2/com/oracle/database/xml/xmlparserv2/12.2.0.1/xmlparserv2-12.2.0.1.pom]
+2022-02-25 15:55:42.322 - Can't load driver properties
+org.jkiss.dbeaver.DBException: Error creating driver 'Oracle' instance.
+Most likely required jar files are missing.
+You should configure jars in driver settings.
+
+Reason: can't load driver class 'oracle.jdbc.OracleDriver'
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.loadDriver(DriverDescriptor.java:1083)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.loadDriver(DriverDescriptor.java:1020)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.getDriverInstance(DriverDescriptor.java:614)
+	at org.jkiss.dbeaver.model.impl.jdbc.JDBCDataSourceProvider.getConnectionProperties(JDBCDataSourceProvider.java:63)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionPropertiesControl.loadDriverProperties(ConnectionPropertiesControl.java:154)
+	at org.jkiss.dbeaver.ui.dialogs.connection.ConnectionPropertiesControl.makeProperties(ConnectionPropertiesControl.java:76)
+	at org.jkiss.dbeaver.ui.dialogs.connection.DriverPropertiesDialogPage.lambda$0(DriverPropertiesDialogPage.java:87)
+	at org.jkiss.dbeaver.runtime.RunnableContextDelegate.lambda$0(RunnableContextDelegate.java:39)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: java.lang.ClassNotFoundException: oracle.jdbc.OracleDriver
+	at java.base/java.net.URLClassLoader.findClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Unknown Source)
+	at org.jkiss.dbeaver.registry.driver.DriverDescriptor.loadDriver(DriverDescriptor.java:1081)
+	... 8 more
+2022-02-25 15:58:23.374 - Execution context closed (localhost, 2)
+2022-02-25 15:58:23.420 - Execution context closed (localhost, 3)
+2022-02-25 15:58:23.515 - Execution context closed (localhost, 4)
+2022-02-25 15:58:23.990 - DBeaver is stopping
+2022-02-25 15:58:23.991 - Stop RMI server
+2022-02-25 15:58:24.006 - RMI controller has been stopped
+2022-02-25 15:58:24.019 - DBeaver shutdown completed
